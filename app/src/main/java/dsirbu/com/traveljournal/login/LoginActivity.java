@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -38,6 +39,8 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
         // this method "setContentView" connects the current activity to the "activity_login" screen
         setContentView(R.layout.activity_login);
@@ -48,16 +51,17 @@ public class LoginActivity extends AppCompatActivity {
         initView();
     }
 
+
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        try {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
-        }
-        catch (Exception e) {
-
-        }
+//        try {
+//            FirebaseUser currentUser = mAuth.getCurrentUser();
+//        }
+//        catch (Exception e) {
+//
+//        }
     }
 
     // get the views from the layout based on an unique id defined in the xml file
@@ -120,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
             intent.putExtra("email", mEditTextEmail.getText().toString());
             intent.putExtra("user", mEditTextPhone.getText().toString());
             startActivity(intent);
-//
+
 //            mAuth.signInWithEmailAndPassword(mEditTextEmail.getText().toString(), mEditTextPassword.getText().toString())
 //                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
 //                        @Override

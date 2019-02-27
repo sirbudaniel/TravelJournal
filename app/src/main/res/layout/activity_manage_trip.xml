@@ -219,6 +219,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="left|center"
+                    android:onClick="btnTakePhotoGallery"
                     android:text="@string/select" />
             </LinearLayout>
         </LinearLayout>
