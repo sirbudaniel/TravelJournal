@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">Travel Journal</string>
+    <string name="login">LOGIN</string>
+    <string name="submit">submit</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="accept"><![CDATA[I accept T&C]]></string>
+    <string name="error_email_input">Fill the input with a valid email address</string>
+    <string name="error_phone_input">Fill the input with a phone number</string>
+    <string name="error_is_accepted_input">Check should be accepted</string>
+    <string name="password">Password</string>
+    <string name="title_activity_travel">travel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Trips">Trips</string>
+    <string name="trip_name_hint">Trip Name</string>
+    <string name="destination">Destination</string>
+    <string name="select">SELECT</string>
+    <string name="gallery_photo">Gallery Photo</string>
+    <string name="camera_photo">Take Picture</string>
+    <string name="rating">Rating</string>
+    <string name="trip_name">Trip Name</string>
+    <string name="trip_type">Trip Type</string>
+    <string name="city_break">City Break</string>
+    <string name="see_side">See Side</string>
+    <string name="mountain">Mountain</string>
+    <string name="price_eur">Price(eur)</string>
+    <string name="save">SAVE</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="aboutus">About Us</string>
+    <string name="contact">Contact</string>
+    <string name="single_click">Single click for</string>
+    <string name="button_item">Button for</string>
+    <string name="long_click">Long click for</string>
+    <string name="click">Click</string>
+    <string name="description"> Company Name is a family-owned tour operator and travel agency located in Bucharest, RO.
+We specialize in tours to Europe but are always expanding and enhancing our wide range of offers, as well as adding new and exciting tours of Canada, Mexico and the Caribbean</string>
 </resources>

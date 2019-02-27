@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="@dimen/space_8">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <ImageView
+        android:id="@+id/imageview_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_128"
+        android:scaleType="fitCenter" />
+</LinearLayout>
+
+<LinearLayout android:layout_marginLeft="@dimen/space_8"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8" />
+
+    <TextView
+        android:id="@+id/textview_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginTop="@dimen/space_8" />
+
+    <ImageButton
+        android:id="@+id/button_click"
+        android:src="@drawable/baseline_bookmark_border_black_18dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="btnAddToFavorite"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>
+</LinearLayout>
