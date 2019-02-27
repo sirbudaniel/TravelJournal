@@ -64,8 +64,6 @@ public class TravelActivity extends AppCompatActivity
             mTextViewUser.setText(extras.getString("user"));
             mTextViewEmail.setText(extras.getString("email"));
         }
-
-
     }
 
 
